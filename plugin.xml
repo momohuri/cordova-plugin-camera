@@ -66,14 +66,17 @@
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-             <activity
-android:label="Take a picture!"
-android:name="org.apache.cordova.camera.CameraActivity"
-android:screenOrientation="portrait"
-android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-</activity>
         </config-file>
 
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+
+             <activity
+                android:label="Take a picture!"
+                android:name="org.apache.cordova.camera.CameraActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            </activity>
+        </config-file>
         <source-file src="src/android/CameraLauncher.java" target-dir="src/org/apache/cordova/camera" />
         <source-file src="src/android/CameraActivity.java" target-dir="src/org/apache/cordova/camera" />
          <source-file src="src/android/CameraPreview.java" target-dir="src/org/apache/cordova/camera" />
