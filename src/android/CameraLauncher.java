@@ -23,7 +23,7 @@ import android.content.Intent;
 import android.media.MediaScannerConnection;
 
 import android.net.Uri;
-import android.src.org.apache.cordova.camera.CameraActivity;
+import org.apache.cordova.camera.CameraActivity;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;

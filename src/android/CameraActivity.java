@@ -13,8 +13,8 @@ import android.view.View;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 
-import static android.src.org.apache.cordova.camera.MediaHelper.getOutputMediaFile;
-import static android.src.org.apache.cordova.camera.MediaHelper.saveToFile;
+import static org.apache.cordova.camera.MediaHelper.getOutputMediaFile;
+import static org.apache.cordova.camera.MediaHelper.saveToFile;
 
 /**
  * Takes a photo saves it to the SD card and returns the path of this photo to the calling Activity
