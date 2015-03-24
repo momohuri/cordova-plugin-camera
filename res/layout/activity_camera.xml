@@ -4,7 +4,7 @@
              android:layout_height="fill_parent">
 
 
-    <com.blundell.tut.cameraoverlay.ui.widget.CameraPreview
+    <org.apache.cordova.camera.CameraPreview
             android:id="@+id/camera_preview"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"/>
