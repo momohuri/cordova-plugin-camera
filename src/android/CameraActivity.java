@@ -9,7 +9,6 @@ import android.hardware.Camera.PictureCallback;
 import android.media.ThumbnailUtils;
 import android.os.Bundle;
 import android.view.View;
-import org.apache.cordova.camera.CameraPreview;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
