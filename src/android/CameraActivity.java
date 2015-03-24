@@ -26,7 +26,8 @@ public class CameraActivity extends Activity implements PictureCallback {
     public static final String EXTRA_IMAGE_PATH = "diogoPath";
 
     private Camera camera;
-    private CameraPreview cameraPreview;
+    private org.apache.cordova.camera.CameraPreview cameraPreview;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +41,11 @@ public class CameraActivity extends Activity implements PictureCallback {
 
     // Show the camera view on the activity
     private void initCameraPreview() {
-
-        cameraPreview = (CameraPreview) findViewById(getApplication().getResources().getIdentifier("activity_camera.xml", "layout", getApplication().getPackageName()));
+        int id = getResources().getIdentifier("activity_camera", "layout", getApplicationContext().getPackageName());
+        int a = getResources().getIdentifier("camera_preview", "id", getPackageName());
+        setContentView(id);
+        camera = Camera.open();
+        cameraPreview = (org.apache.cordova.camera.CameraPreview) findViewById(a);
         cameraPreview.init(camera);
     }
 
