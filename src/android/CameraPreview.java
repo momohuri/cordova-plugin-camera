@@ -1,4 +1,4 @@
-package android.src.org.apache.cordova.camera;
+package org.apache.cordova.camera;
 
 import android.content.Context;
 import android.graphics.Canvas;

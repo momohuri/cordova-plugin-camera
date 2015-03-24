@@ -16,7 +16,7 @@
        specific language governing permissions and limitations
        under the License.
 */
-package android.src.org.apache.cordova.camera;
+package org.apache.cordova.camera;
 
 import android.content.Context;
 import android.content.Intent;
