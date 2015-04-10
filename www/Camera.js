@@ -63,15 +63,8 @@ cameraExport.getPicture = function (successCallback, errorCallback, options) {
     var args = [quality, destinationType, sourceType, targetWidth, targetHeight, encodingType,
         mediaType, allowEdit, correctOrientation, saveToPhotoAlbum, popoverOptions, cameraDirection];
 
-     //todo shitty code to change (we should change the class names in ios)
-    var isIPad = ionic.Platform.isIPad();
-    var isIOS = ionic.Platform.isIOS();
-    var plugin;
-    if (isIOS || isIPad) plugin = "CustomCamera";
-    else plugin = "Camera";
 
-
-    exec(successCallback, errorCallback, plugin, "takePicture", args);
+    exec(successCallback, errorCallback, "Camera", "takePicture", args);
     // XXX: commented out
     //return new CameraPopoverHandle();
 };
