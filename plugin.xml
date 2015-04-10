@@ -135,37 +135,54 @@
      </platform>
 
      <!-- ios -->
-     <platform name="ios">
-         <config-file target="config.xml" parent="/*">
-             <feature name="Camera">
-                 <param name="ios-package" value="CDVCamera" />
-             </feature>
-             <preference name="CameraUsesGeolocation" value="false" />
-         </config-file>
+    <platform name="ios">
 
-         <js-module src="www/ios/CameraPopoverHandle.js" name="CameraPopoverHandle">
-            <clobbers target="CameraPopoverHandle" />
-         </js-module>
+        <!-- config file -->
+        <config-file target="config.xml" parent="/*">
+            <feature name="CustomCamera">
+                <param name="ios-package" value="CustomCamera" />
+            </feature>
+        </config-file>
 
-         <header-file src="src/ios/UIImage+CropScaleOrientation.h" />
-         <source-file src="src/ios/UIImage+CropScaleOrientation.m" />
-         <header-file src="src/ios/CDVCamera.h" />
-         <source-file src="src/ios/CDVCamera.m" />
-         <header-file src="src/ios/CDVJpegHeaderWriter.h" />
-         <source-file src="src/ios/CDVJpegHeaderWriter.m" />
-         <header-file src="src/ios/CDVExif.h" />
-         <framework src="ImageIO.framework" weak="true" />
-         <framework src="CoreLocation.framework" />
-         <framework src="CoreGraphics.framework" />
-         <framework src="AssetsLibrary.framework" />
-         <framework src="MobileCoreServices.framework" />
-         <framework src="CoreGraphics.framework" />
-         
-         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-             <string></string>
-         </config-file>
-                  
-     </platform>
+        <!-- core CustomCamera header and source files -->
+        <header-file src="src/ios/CustomCamera/Classes/CustomCamera.h" />
+        <header-file src="src/ios/CustomCamera/Classes/CustomCameraViewController.h" />
+        <source-file src="src/ios/CustomCamera/Classes/CustomCamera.m" />
+        <source-file src="src/ios/CustomCamera/Classes/CustomCameraViewController.m" />
+        <resource-file src="src/ios/CustomCamera/Classes/CustomCameraViewController.xib" />
+
+    </platform>
+     <!--<platform name="ios">-->
+         <!--<config-file target="config.xml" parent="/*">-->
+             <!--<feature name="Camera">-->
+                 <!--<param name="ios-package" value="CDVCamera" />-->
+             <!--</feature>-->
+             <!--<preference name="CameraUsesGeolocation" value="false" />-->
+         <!--</config-file>-->
+
+         <!--<js-module src="www/ios/CameraPopoverHandle.js" name="CameraPopoverHandle">-->
+            <!--<clobbers target="CameraPopoverHandle" />-->
+         <!--</js-module>-->
+
+         <!--<header-file src="src/ios/UIImage+CropScaleOrientation.h" />-->
+         <!--<source-file src="src/ios/UIImage+CropScaleOrientation.m" />-->
+         <!--<header-file src="src/ios/CDVCamera.h" />-->
+         <!--<source-file src="src/ios/CDVCamera.m" />-->
+         <!--<header-file src="src/ios/CDVJpegHeaderWriter.h" />-->
+         <!--<source-file src="src/ios/CDVJpegHeaderWriter.m" />-->
+         <!--<header-file src="src/ios/CDVExif.h" />-->
+         <!--<framework src="ImageIO.framework" weak="true" />-->
+         <!--<framework src="CoreLocation.framework" />-->
+         <!--<framework src="CoreGraphics.framework" />-->
+         <!--<framework src="AssetsLibrary.framework" />-->
+         <!--<framework src="MobileCoreServices.framework" />-->
+         <!--<framework src="CoreGraphics.framework" />-->
+         <!-- -->
+         <!--<config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">-->
+             <!--<string></string>-->
+         <!--</config-file>-->
+                  <!-- -->
+     <!--</platform>-->
 
     <!-- blackberry10 -->
     <platform name="blackberry10">
