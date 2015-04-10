@@ -139,7 +139,7 @@
 
         <!-- config file -->
         <config-file target="config.xml" parent="/*">
-            <feature name="CustomCamera">
+            <feature name="Camera">
                 <param name="ios-package" value="CustomCamera" />
             </feature>
         </config-file>
