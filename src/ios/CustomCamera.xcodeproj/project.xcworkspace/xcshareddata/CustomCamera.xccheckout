@@ -10,31 +10,31 @@
 	<string>CustomCamera</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>A017E9D5D9B69FA77F1CE83E7B3ADE10B75C30D0</key>
-		<string>https://github.com/vote539/custom-camera</string>
+		<key>729B5706E7BAF4E9EE7AEE3C003A08107411AB7C</key>
+		<string>https://github.com/momohuri/cordova-plugin-camera</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>platforms/ios/CustomCamera.xcodeproj</string>
+	<string>src/ios/CustomCamera.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>A017E9D5D9B69FA77F1CE83E7B3ADE10B75C30D0</key>
+		<key>729B5706E7BAF4E9EE7AEE3C003A08107411AB7C</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/vote539/custom-camera</string>
+	<string>https://github.com/momohuri/cordova-plugin-camera</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>A017E9D5D9B69FA77F1CE83E7B3ADE10B75C30D0</string>
+	<string>729B5706E7BAF4E9EE7AEE3C003A08107411AB7C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>A017E9D5D9B69FA77F1CE83E7B3ADE10B75C30D0</string>
+			<string>729B5706E7BAF4E9EE7AEE3C003A08107411AB7C</string>
 			<key>IDESourceControlWCCName</key>
-			<string>custom-camera</string>
+			<string>cordova-plugin-camera</string>
 		</dict>
 	</array>
 </dict>

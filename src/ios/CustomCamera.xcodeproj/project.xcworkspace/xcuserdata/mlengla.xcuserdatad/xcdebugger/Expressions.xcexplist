@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[CustomCameraViewController initWithNibName:bundle:]:CustomCameraViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "CGRectMake(b, 0, w, t)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
